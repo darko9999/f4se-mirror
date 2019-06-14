@@ -14,7 +14,7 @@
 
 namespace Serialization
 {
-	const char * kSavegamePath = "\\My Games\\Fallout4\\";
+	const char * kSavegamePath = "\\My Games\\Fallout4VR\\";
 
 	// file format internals
 

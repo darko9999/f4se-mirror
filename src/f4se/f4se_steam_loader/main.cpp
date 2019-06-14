@@ -27,7 +27,7 @@ BOOL WINAPI DllMain(HANDLE procHandle, DWORD reason, LPVOID reserved)
 
 static void OnAttach(void)
 {
-	gLog.OpenRelative(CSIDL_MYDOCUMENTS, "\\My Games\\Fallout4\\F4SE\\f4se_steam_loader.log");
+	gLog.OpenRelative(CSIDL_MYDOCUMENTS, "\\My Games\\Fallout4VR\\F4SE\\f4se_steam_loader.log");
 	gLog.SetPrintLevel(IDebugLog::kLevel_Error);
 	gLog.SetLogLevel(IDebugLog::kLevel_DebugMessage);
 

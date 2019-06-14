@@ -39,7 +39,7 @@ void F4SE_Initialize(void)
 	if(isInit) return;
 	isInit = true;
 
-	gLog.OpenRelative(CSIDL_MYDOCUMENTS, "\\My Games\\Fallout4\\F4SE\\f4se.log");
+	gLog.OpenRelative(CSIDL_MYDOCUMENTS, "\\My Games\\Fallout4VR\\F4SE\\f4se.log");
 
 #ifndef _DEBUG
 	__try {

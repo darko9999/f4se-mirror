@@ -17,7 +17,7 @@ static void PrintProcessInfo();
 
 int main(int argc, char ** argv)
 {
-	gLog.OpenRelative(CSIDL_MYDOCUMENTS, "\\My Games\\Fallout4\\F4SE\\f4se_loader.log");
+	gLog.OpenRelative(CSIDL_MYDOCUMENTS, "\\My Games\\Fallout4VR\\F4SE\\f4se_loader.log");
 	gLog.SetPrintLevel(IDebugLog::kLevel_FatalError);
 	gLog.SetLogLevel(IDebugLog::kLevel_DebugMessage);
 
@@ -72,7 +72,7 @@ int main(int argc, char ** argv)
 		}
 		else
 		{
-			procName = "Fallout4.exe";
+			procName = "Fallout4VR.exe";
 
 			// simple check to see if someone kludge-patched the EXE
 			// don't kludge the EXE, use the .ini file RIGHT ABOVE HERE
