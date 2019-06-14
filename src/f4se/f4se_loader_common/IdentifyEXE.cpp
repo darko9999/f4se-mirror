@@ -214,7 +214,7 @@ bool IdentifyEXE(const char * procName, bool isEditor, std::string * dllSuffix, 
 
 	bool result = false;
 
-	const UInt64 kCurVersion = 0x0001000A008A0000;	// 1.10.138.0
+	const UInt64 kCurVersion = 0x0001000200480000;	// 1.2.72.0
 
 	// convert version resource to internal version format
 	UInt32 versionInternal = MAKE_EXE_VERSION(version >> 48, version >> 32, version >> 16);
@@ -229,18 +229,18 @@ bool IdentifyEXE(const char * procName, bool isEditor, std::string * dllSuffix, 
 				F4SE_VERSION_INTEGER, F4SE_VERSION_INTEGER_MINOR, F4SE_VERSION_INTEGER_BETA, CURRENT_RELEASE_F4SE_STR);
 		else
 			PrintLoaderError(
-				"You are using Fallout version %d.%d.%d, which is out of date and incompatible with this version of F4SE. Update to the latest beta version.",
+				"You are using FalloutVR version %d.%d.%d, which is out of date and incompatible with this version of F4SE. Update to the latest beta version.",
 				GET_EXE_VERSION_MAJOR(versionInternal), GET_EXE_VERSION_MINOR(versionInternal), GET_EXE_VERSION_BUILD(versionInternal));
 #else
 		PrintLoaderError(
-			"You are using Fallout version %d.%d.%d, which is out of date and incompatible with this version of F4SE. Update to the latest version.",
+			"You are using FalloutVR version %d.%d.%d, which is out of date and incompatible with this version of F4SE. Update to the latest version.",
 			GET_EXE_VERSION_MAJOR(versionInternal), GET_EXE_VERSION_MINOR(versionInternal), GET_EXE_VERSION_BUILD(versionInternal));
 #endif
 	}
 	else if(version > kCurVersion)
 	{
 		PrintLoaderError(
-			"You are using a newer version of Fallout than this version of F4SE supports.\n"
+			"You are using a newer version of FalloutVR than this version of F4SE supports.\n"
 			"If this version just came out, please be patient while we update our code.\n"
 			"In the meantime, please check http://f4se.silverlock.org for updates.\n"
 			"Runtime: %d.%d.%d\n"
@@ -271,7 +271,7 @@ bool IdentifyEXE(const char * procName, bool isEditor, std::string * dllSuffix, 
 		{
 		case kProcType_Steam:
 		case kProcType_Normal:
-			*dllSuffix = "1_10_138";
+			*dllSuffix = "1_2_72";
 
 			result = true;
 
