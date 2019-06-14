@@ -200,7 +200,7 @@ int main(int argc, char ** argv)
 		}
 
 		// same for standard and nogore
-		const char * kAppID = (g_options.m_launchCS == false ? "377160" : "???");
+		const char * kAppID = (g_options.m_launchCS == false ? "611660" : "???");
 
 		// set this no matter what to work around launch issues
 		SetEnvironmentVariable("SteamGameId", kAppID);
